@@ -1,5 +1,5 @@
 {% set name = "tweetynet" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tweetynet-{{ version }}.tar.gz
-  sha256: 4eabfe90deee816946a44cd4764489d452ea469ed7c3e55e28e1e67dd9e62d11
+  sha256: 75ff2c12d63f19aa8191bf9b0a304ea628f4f6f0b13631a620f393d67a6e613c
 
 build:
   number: 0
