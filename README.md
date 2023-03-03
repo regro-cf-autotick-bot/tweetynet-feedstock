@@ -1,11 +1,11 @@
-About tweetynet
-===============
+About tweetynet-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tweetynet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/tweetynet/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tweetynet-feedstock/blob/main/LICENSE.txt)
 
 Summary: neural network that segments and labels birdsong and other animal vocalizations
 
