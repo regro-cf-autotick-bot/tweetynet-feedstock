@@ -1,5 +1,5 @@
 {% set name = "tweetynet" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tweetynet-{{ version }}.tar.gz
-  sha256: 75ff2c12d63f19aa8191bf9b0a304ea628f4f6f0b13631a620f393d67a6e613c
+  sha256: 9b7d74b4ac0e74100537dd9ab2b1e6bb85e6254e4340ffcf30f894fc4e1d13e6
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.8
     - pytorch >=1.7.1
-    - vak >=0.6.0
+    - vak >=0.8.0
 
 test:
   imports:
