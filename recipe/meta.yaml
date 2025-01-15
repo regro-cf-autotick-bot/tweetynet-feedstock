@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tweetynet-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tweetynet-{{ version }}.tar.gz
   sha256: 9b7d74b4ac0e74100537dd9ab2b1e6bb85e6254e4340ffcf30f894fc4e1d13e6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - flit-core
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pytorch >=1.7.1
     - vak >=0.8.0
 
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/tweetynet/
